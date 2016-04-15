@@ -1,0 +1,60 @@
+<dom-module id="landing-page">
+  <template>
+    <style>
+
+      :host {
+        @apply(--layout-horizontal);
+        @apply(--layout-center-center);
+      }
+
+      paper-card {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 500px;
+        height: 400px;
+        margin: 16px;
+
+        --paper-card-header-color: #fff;
+        --paper-card-header: {
+          height: 100px;
+          background-color: #E76726;
+        };
+
+        --paper-card-content: {
+          padding-top: 50px;
+        };
+      }
+
+      paper-icon-button {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        background-color: #80CBC4;
+        border-radius: 50%;
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      }
+
+      #circle {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: #E76726;
+      }
+    </style>
+
+
+    <div>
+      <paper-card heading="Emmental">
+        <div id="card-content" class="card-content">
+          Emmentaler or Emmental is a yellow, medium-hard cheese that originated in the area around Emmental, Switzerland. It is one of the cheeses of Switzerland, and is sometimes known as Swiss cheese.
+        </div>
+        <paper-icon-button icon="icons:arrow-forward" on-click="goToMainPage"></paper-icon-button>
+      </paper-card>
+    </div>
+
+  </template>
+</dom-module>

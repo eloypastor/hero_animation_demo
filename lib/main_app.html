@@ -1,0 +1,26 @@
+<!--
+  Copyright (c) 2016, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<dom-module id="main-app">
+  <style>
+    :host {
+      display: block;
+    }
+
+    neon-animated-pages {
+      @apply(--layout-fit);
+      background-color: #FBECE5;
+    }
+
+  </style>
+
+  <template>
+
+    <neon-animated-pages selected="0">
+      <landing-page></landing-page>
+      <main-page></main-page>
+    </neon-animated-pages>
+  </template>
+</dom-module>
